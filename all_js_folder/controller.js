@@ -69,7 +69,7 @@ function init()
     // listenin for events on new_game_button
     view_new_game_button.add_event_listener_function_button_new_game(control_new_game_button_working_function)
 
-    
+    console.log(`img-working-branch`)   
     
 
 }
