@@ -28,13 +28,34 @@ export function add_event_listener_function_button_roll_dice(recieved_control_di
 export function display_dice_img_function(recieved_random_dice_number , recieved_dice_img_name)
 {
     console.log(recieved_random_dice_number , recieved_dice_img_name)
-    console.log(`./${recieved_dice_img_name}.png`)
 
-    // console.log(require(`./${recieved_dice_img_name}.png`)
+    if(recieved_random_dice_number === 1)
+    {
+        dice_img.src = `https://clipartmag.com/images/picture-of-dice-1.gif` ;
+    }
+    else if (recieved_random_dice_number === 2)
+    {
+        dice_img.src = `https://clipground.com/images/dice-clipart-1-6.gif` ;
+    }
+    else if (recieved_random_dice_number === 3)
+    {
+        dice_img.src = `https://clipartmag.com/images/picture-of-dice-17.gif` ;        
+    }
+    else if (recieved_random_dice_number === 4)
+    {
+        dice_img.src = `https://clipground.com/images/dice-clipart-1-6-9.gif` ;        
+    }
+    else if (recieved_random_dice_number === 5)
+    {
+        dice_img.src = `https://www.clipartbest.com/cliparts/pi5/xox/pi5xoxgkT.gif` ;        
+    }
+    else if (recieved_random_dice_number === 6)
+    {
+        dice_img.src = `https://www.clipartbest.com/cliparts/dcr/o4z/dcro4z4Bi.gif` ;        
+    }
+
 
     // 1 : load the appropraite reievede dice img onto DOM
-    dice_img.src = `./${recieved_dice_img_name}.png` ; //./all_dice_pictures/dice-3.png
-    console.log(dice_img.src)
 
     // 2 : make that img visible
     helpers.make_dice_img_opacity_one_function() ;
